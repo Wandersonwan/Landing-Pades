@@ -1,0 +1,91 @@
+/* Header*/
+@media (max-width: 900px) {
+    .header .menu {
+        display: block
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header input:checked~ul {
+        display: block;
+    }
+
+    .header nav {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .header nav ul {
+        width: 200px;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .header nav ul a {
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+
+}
+
+
+/* Hero*/
+
+@media(max-width:460px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* about */
+
+@media(max-width:460px) {
+    .about .item {
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/* services */
+
+@media(max-width:600px) {
+    .services .service img {
+        max-width: 90%;
+    }
+}
+
+@media(max-width:460px) {
+    .services {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+/* Projects */
+
+@media(max-width:768px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr ;
+
+    }
+}
+@media(max-width:460px){
+    .projects{
+        grid-template-columns: 1fr;
+        
+    }
+}
